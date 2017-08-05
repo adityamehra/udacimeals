@@ -9,7 +9,6 @@ class App extends Component {
 
   componentDidMount () {
     const {store} = this.props
-
     store.subscribe(() => {
       this.setState(() => ({
         calendar: store.getState()
@@ -25,7 +24,6 @@ class App extends Component {
         label: this.input.value
       }
     }))
-
     this.input.value = ''
   }
 
